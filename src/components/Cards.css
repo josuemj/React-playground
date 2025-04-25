@@ -1,0 +1,19 @@
+.card {
+    background-color: var(--bg);
+    padding: 20px;
+    font-family: sans-serif;
+    width: 10%;
+    height: 15%;
+    transition: ease-in-out 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 7px 2px 29px 0px rgba(171,35,35,0.55);
+
+  }
+
+.card:hover{
+    background-color: var(--hover);
+    box-shadow: 11px 24px 29px 0px rgba(0,0,0,0.55);
+}
