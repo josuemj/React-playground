@@ -8,6 +8,7 @@ export function Home() {
     route: string;
     backgrounColor: string;
     onHoverColor: string;
+    labels: string[];
   }
   const projects: Project[] = [
     {
@@ -16,14 +17,16 @@ export function Home() {
       route: "/counter",
       backgrounColor: "rgb(255, 204, 102)",
       onHoverColor: "rgb(255, 102, 102)",
+      labels: ["setState", "foundational"],
     },
     {
-        name: "Cat Facts",
-        desc: "Random cat facts",
-        route: "/catfacts",
-        backgrounColor: "rgb(35, 84, 169)",
-        onHoverColor: "rgb(39, 116, 139)",
-      },
+      name: "Cat Facts",
+      desc: "Random cat facts",
+      route: "/catfacts",
+      backgrounColor: "rgb(35, 84, 169)",
+      onHoverColor: "rgb(39, 116, 139)",
+      labels: ["fetch", "data", "API", "JSON"],
+    },
   ];
   return (
     <>
@@ -34,6 +37,8 @@ export function Home() {
             route={project.route}
             backGroundColor={project.backgrounColor}
             onHoverColor={project.onHoverColor}
+            description={project.desc}
+            labels={project.labels}
           />
         ))}
       </section>

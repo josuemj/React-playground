@@ -1,0 +1,18 @@
+.label {
+  background-color: var(--hover);
+  display: inline-block;
+  padding: 0.25rem;
+  border-radius: 0.3125rem;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all 0.1s;
+}
+
+.label:hover {
+  background-color: var(--bg);
+}
