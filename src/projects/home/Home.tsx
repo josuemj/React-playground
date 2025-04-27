@@ -1,4 +1,5 @@
 import { Card } from "../../components/Card";
+import { useEffect, useState } from "react";
 import "./Home.css";
 
 export function Home() {
@@ -10,37 +11,44 @@ export function Home() {
     onHoverColor: string;
     labels: string[];
   }
-  const projects: Project[] = [
-    {
-      name: "Counter",
-      desc: "A basic counter",
-      route: "/counter",
-      backgrounColor: "rgb(255, 204, 102)",
-      onHoverColor: "rgb(255, 102, 102)",
-      labels: ["setState", "foundational"],
-    },
-    {
-      name: "Cat Facts",
-      desc: "Random cat facts",
-      route: "/catfacts",
-      backgrounColor: "rgb(35, 84, 169)",
-      onHoverColor: "rgb(39, 116, 139)",
-      labels: ["fetch", "data", "API", "JSON"],
-    },
-  ];
+
+  const [projectsData, setProjects] = useState<Project[]>([]);
+
+  const getProjects = async () => {
+    try {
+      const response = await fetch("../data/projects.json");
+      const data = await response.json();
+      console.log(data);
+      if (data) {
+        setProjects(data);
+      } else {
+        setProjects([]);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
   return (
     <>
       <section className="main_section">
-        {projects.map((project) => (
-          <Card
-            projectName={project.name}
-            route={project.route}
-            backGroundColor={project.backgrounColor}
-            onHoverColor={project.onHoverColor}
-            description={project.desc}
-            labels={project.labels}
-          />
-        ))}
+        {projectsData ? (
+          projectsData.map((project) => (
+            <Card
+              projectName={project.name}
+              route={project.route}
+              backGroundColor={project.backgrounColor}
+              onHoverColor={project.onHoverColor}
+              description={project.desc}
+              labels={project.labels}
+            />
+          ))
+        ) : (
+          <h1>no data</h1>
+        )}
       </section>
     </>
   );

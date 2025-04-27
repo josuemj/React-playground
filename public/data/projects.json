@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Counter",
+    "desc": "A basic counter",
+    "route": "/counter",
+    "backgrounColor": "rgb(255, 204, 102)",
+    "onHoverColor": "rgb(255, 102, 102)",
+    "labels": ["setState", "foundational"]
+  },
+  {
+    "name": "Cat Facts",
+    "desc": "Random cat facts",
+    "route": "/catfacts",
+    "backgrounColor": "rgb(35, 84, 169)",
+    "onHoverColor": "rgb(39, 116, 139)",
+    "labels": ["fetch", "data", "API", "JSON"]
+  }
+]
