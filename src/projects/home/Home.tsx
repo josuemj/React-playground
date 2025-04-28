@@ -16,6 +16,7 @@ export function Home() {
         {projectsData.length > 0 ? (
           projectsData.map((project) => (
             <Card
+              image={project.image}
               projectName={project.name}
               route={project.route}
               backGroundColor={project.backgrounColor}

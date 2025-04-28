@@ -1,5 +1,6 @@
 [
   {
+    "image": "https://8409213.fs1.hubspotusercontent-na1.net/hubfs/8409213/__hs-marketplace__/Star%20Rating%20(6)-1.png",
     "name": "Counter",
     "desc": "A basic counter",
     "route": "/counter",
@@ -8,10 +9,11 @@
     "labels": ["setState", "foundational"]
   },
   {
+    "image": "https://i.natgeofe.com/n/9135ca87-0115-4a22-8caf-d1bdef97a814/75552.jpg",
     "name": "Cat Facts",
     "desc": "Random cat facts",
     "route": "/catfacts",
-    "backgrounColor": "rgb(35, 84, 169)",
+    "backgrounColor": "rgb(169, 169, 169)",
     "onHoverColor": "rgb(39, 116, 139)",
     "labels": ["fetch", "data", "API", "JSON"]
   }

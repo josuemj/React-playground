@@ -1,8 +1,8 @@
 import "./Cards.css";
 import { useNavigate } from "react-router-dom";
 import { Label } from "./Label";
-
 type CardProps = {
+  image: string
   projectName: string;
   route: string;
   backGroundColor: string;
@@ -12,6 +12,7 @@ type CardProps = {
 };
 
 export function Card({
+  image,
   projectName,
   route,
   backGroundColor,
@@ -35,7 +36,7 @@ export function Card({
         }}
       >
         <div className="image-container">
-          <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" />
+          <img src={image} />
         </div>
         <p className="project-title">{projectName}</p>
         <p className="project-description">{description}</p>
