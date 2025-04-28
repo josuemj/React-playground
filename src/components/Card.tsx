@@ -2,7 +2,7 @@ import "./Cards.css";
 import { useNavigate } from "react-router-dom";
 import { Label } from "./Label";
 type CardProps = {
-  image: string
+  image: string;
   projectName: string;
   route: string;
   backGroundColor: string;
@@ -42,7 +42,7 @@ export function Card({
         <p className="project-description">{description}</p>
         <div className="label-container">
           {labels.map((label) => (
-            <Label label={label} />
+            <Label label={label} key={label} />
           ))}
         </div>
       </div>

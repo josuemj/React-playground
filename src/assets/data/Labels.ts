@@ -35,4 +35,24 @@ export const labelColors: Record<string, LabelColor> = {
     onHoverColor: "rgb(194, 25, 25)",
     textColor: "white",
   },
+  setTimeout: {
+    backgroundColor: "rgb(255, 100, 100)",
+    onHoverColor: "rgb(194, 25, 25)",
+    textColor: "white",
+  },
+  useEffect: {
+    backgroundColor: "rgb(255, 100, 100)",
+    onHoverColor: "rgb(194, 25, 25)",
+    textColor: "white",
+  },
+  math: {
+    backgroundColor: "rgb(255, 100, 100)",
+    onHoverColor: "rgb(194, 25, 25)",
+    textColor: "white",
+  },
+  style: {
+    backgroundColor: "rgb(255, 100, 100)",
+    onHoverColor: "rgb(194, 25, 25)",
+    textColor: "white",
+  },
 };

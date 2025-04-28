@@ -23,6 +23,7 @@ export function Home() {
               onHoverColor={project.onHoverColor}
               description={project.desc}
               labels={project.labels}
+              key={project.name}
             />
           ))
         ) : (
