@@ -2,7 +2,9 @@
     width: 80vw;
     height: 90vh;
     display: flex;
+    align-content: space-between;
+    justify-content: space-around;
     background-color: rgb(107, 194, 194);
     padding: 5vh 10vw 5vh 10vw;
-    background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);    
 }

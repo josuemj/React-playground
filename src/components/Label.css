@@ -1,0 +1,12 @@
+.label {
+  display: inline-block;
+  padding: 0.25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: background-color 0.3s ease;
+}

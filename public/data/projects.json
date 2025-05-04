@@ -1,0 +1,29 @@
+[
+  {
+    "image": "https://8409213.fs1.hubspotusercontent-na1.net/hubfs/8409213/__hs-marketplace__/Star%20Rating%20(6)-1.png",
+    "name": "Counter",
+    "desc": "A basic counter",
+    "route": "/counter",
+    "backgrounColor": "rgb(255, 204, 102)",
+    "onHoverColor": "rgb(255, 102, 102)",
+    "labels": ["setState", "foundational"]
+  },
+  {
+    "image": "https://i.natgeofe.com/n/9135ca87-0115-4a22-8caf-d1bdef97a814/75552.jpg",
+    "name": "Cat Facts",
+    "desc": "Random cat facts",
+    "route": "/catfacts",
+    "backgrounColor": "rgb(169, 169, 169)",
+    "onHoverColor": "rgb(39, 116, 139)",
+    "labels": ["fetch", "data", "API", "JSON"]
+  },
+  {
+    "image": "https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-10-at-11.15.14-AM.png",
+    "name": "Timer",
+    "desc": "Just another concept of timer",
+    "route": "/timer",
+    "backgrounColor": "linear-gradient(0deg,rgba(65, 189, 191, 1) 0%, rgba(253, 187, 45, 1) 100%)",
+    "onHoverColor": "linear-gradient(0deg,rgba(65, 78, 191, 1) 0%, rgba(45, 253, 125, 1) 100%)",
+    "labels": ["setTimeout", "useEffect", "math", "style"]
+  }
+]
