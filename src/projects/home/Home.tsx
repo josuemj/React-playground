@@ -1,41 +1,34 @@
 import { Card } from "../../components/Card";
+import { useEffect, useState } from "react";
+import { Project } from "../../models/Project";
+import { getProjects } from "../../services/projectService";
 import "./Home.css";
 
 export function Home() {
-  interface Project {
-    name: string;
-    desc: string;
-    route: string;
-    backgrounColor: string;
-    onHoverColor: string;
-  }
-  const projects: Project[] = [
-    {
-      name: "Counter",
-      desc: "A basic counter",
-      route: "/counter",
-      backgrounColor: "rgb(255, 204, 102)",
-      onHoverColor: "rgb(255, 102, 102)",
-    },
-    {
-        name: "Cat Facts",
-        desc: "Random cat facts",
-        route: "/catfacts",
-        backgrounColor: "rgb(35, 84, 169)",
-        onHoverColor: "rgb(39, 116, 139)",
-      },
-  ];
+  const [projectsData, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    getProjects().then(setProjects);
+  }, []);
   return (
     <>
       <section className="main_section">
-        {projects.map((project) => (
-          <Card
-            projectName={project.name}
-            route={project.route}
-            backGroundColor={project.backgrounColor}
-            onHoverColor={project.onHoverColor}
-          />
-        ))}
+        {projectsData.length > 0 ? (
+          projectsData.map((project) => (
+            <Card
+              image={project.image}
+              projectName={project.name}
+              route={project.route}
+              backGroundColor={project.backgrounColor}
+              onHoverColor={project.onHoverColor}
+              description={project.desc}
+              labels={project.labels}
+              key={project.name}
+            />
+          ))
+        ) : (
+          <h1>no data</h1>
+        )}
       </section>
     </>
   );
