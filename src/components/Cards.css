@@ -1,8 +1,9 @@
 .card {
   background: var(--bg);
   font-family: sans-serif;
-  width: 18.75rem;
+  width: 20rem;
   height: 25rem;
+  margin: 2vw;
   padding: 0.625rem;
   border-radius: 0.625rem;
   flex-direction: column;
