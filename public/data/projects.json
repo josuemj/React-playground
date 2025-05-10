@@ -15,7 +15,7 @@
     "route": "/catfacts",
     "backgrounColor": "rgb(169, 169, 169)",
     "onHoverColor": "rgb(39, 116, 139)",
-    "labels": ["fetch", "data", "API", "JSON"]
+    "labels": ["fetch", "data", "API", "JSON", "useEffect", "Time" , "setState"]
   },
   {
     "image": "https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-10-at-11.15.14-AM.png",
@@ -24,6 +24,6 @@
     "route": "/timer",
     "backgrounColor": "linear-gradient(0deg,rgba(65, 189, 191, 1) 0%, rgba(253, 187, 45, 1) 100%)",
     "onHoverColor": "linear-gradient(0deg,rgba(65, 78, 191, 1) 0%, rgba(45, 253, 125, 1) 100%)",
-    "labels": ["setTimeout", "useEffect", "math", "style"]
+    "labels": ["setTimeout", "useEffect", "math", "style", "Time"]
   }
 ]
