@@ -13,7 +13,7 @@ export function Home() {
   }, []);
   return (
     <>
-    < Header />
+      <Header />
       <section className="main_section">
         {projectsData.length > 0 ? (
           projectsData.map((project) => (
