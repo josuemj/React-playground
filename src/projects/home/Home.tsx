@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Project } from "../../models/Project";
 import { getProjects } from "../../services/projectService";
 import "./Home.css";
+import { Header } from "../../components/header/Header";
 
 export function Home() {
   const [projectsData, setProjects] = useState<Project[]>([]);
@@ -12,6 +13,7 @@ export function Home() {
   }, []);
   return (
     <>
+      <Header />
       <section className="main_section">
         {projectsData.length > 0 ? (
           projectsData.map((project) => (

@@ -38,12 +38,14 @@ export function Card({
         <div className="image-container">
           <img src={image} />
         </div>
-        <p className="project-title">{projectName}</p>
-        <p className="project-description">{description}</p>
-        <div className="label-container">
-          {labels.map((label) => (
-            <Label label={label} key={label} />
-          ))}
+        <div className="card-info">
+          <p className="project-title">{projectName}</p>
+          <p className="project-description">{description}</p>
+          <div className="label-container">
+            {labels.map((label) => (
+              <Label label={label} key={label} />
+            ))}
+          </div>
         </div>
       </div>
     </>
