@@ -60,4 +60,14 @@ export const labelColors: Record<string, LabelColor> = {
     onHoverColor: "rgb(131, 106, 189)",
     textColor: "white",
   },
+  Design: {
+    backgroundColor: "rgb(89, 10, 10)",
+    onHoverColor: "rgb(17, 91, 21)",
+    textColor: "white",
+  },
+  Layout: {
+    backgroundColor: "rgb(31, 32, 105)",
+    onHoverColor: "rgb(17, 91, 21)",
+    textColor: "white",
+  },
 };
