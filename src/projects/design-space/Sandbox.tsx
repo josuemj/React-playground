@@ -4,6 +4,7 @@ export function Sandbox() {
     <>
       <section>
         <h1>Sandbox</h1>
+        <p>This is a simple sandbox component.</p>
       </section>
     </>
   );
