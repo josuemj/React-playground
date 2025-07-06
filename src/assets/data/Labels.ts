@@ -70,4 +70,19 @@ export const labelColors: Record<string, LabelColor> = {
     onHoverColor: "rgb(17, 91, 21)",
     textColor: "white",
   },
+  game: {
+    backgroundColor: "rgb(255, 204, 102)",
+    onHoverColor: "rgb(255, 153, 51)",
+    textColor: "black",
+  },
+  board: {
+    backgroundColor: "rgb(102, 204, 255)",
+    onHoverColor: "rgb(51, 153, 255)",
+    textColor: "black",
+  },
+  strategy: {
+    backgroundColor: "rgb(255, 153, 153)",
+    onHoverColor: "rgb(255, 102, 102)",
+    textColor: "black",
+  },
 };
