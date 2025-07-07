@@ -5,7 +5,7 @@ export function TicTacToe() {
   const [xPositions, setXPosition] = useState<number[]>([]);
   const [oPositions, setOPosition] = useState<number[]>([]);
   const [winner, setWinner] = useState("");
-  
+
   const play = (player: string, positon: number) => {
     if (xPositions.includes(positon) || oPositions.includes(positon)) {
     } else {
@@ -70,17 +70,17 @@ export function TicTacToe() {
                 winner != ""
                   ? { pointerEvents: "none" }
                   : xPositions.includes(i)
-                  ? { backgroundColor: "red" }
+                  ? { backgroundColor: "rgb(0, 193, 180)" }
                   : oPositions.includes(i)
-                  ? { backgroundColor: "blue" }
-                  : {}
+                  ? { backgroundColor: "rgb(44, 242, 0)" }
+                  : { backgroundColor: "rgb(229, 248, 255)" }
               }
             >
               {xPositions.includes(i) ? "X" : oPositions.includes(i) ? "O" : ""}
             </div>
           ))}
         </div>
-        {winner != "" ? <button onClick={restart}>Restart</button> : ""}
+        {winner != "" ? <button onClick={restart}>Play again</button> : ""}
       </section>
     </>
   );

@@ -6,7 +6,27 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #f0f0f0;
+  background-color: #60c190;
+  font-family: "Cairo Play", sans-serif;
+}
+
+.tic-tac-toe h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.tic-tac-toe button {
+  font-size: 3rem;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background-color: #d6f184;
+}
+
+.tic-tac-toe button:hover {
+  background-color: rgb(157, 255, 0);
 }
 
 .square {
@@ -44,4 +64,6 @@
   background-color: #fff;
   background: rgba(85, 43, 96, 0.358);
   padding: 2rem;
+  background: rgba(48, 145, 58, 0.358);
+  background: rgba(39, 125, 135, 0.358);
 }
