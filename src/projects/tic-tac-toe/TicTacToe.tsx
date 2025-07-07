@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import "./TicTacToe.css"; // Assuming you have a CSS file for styling
 export function TicTacToe() {
@@ -6,7 +5,7 @@ export function TicTacToe() {
   const [xPositions, setXPosition] = useState<number[]>([]);
   const [oPositions, setOPosition] = useState<number[]>([]);
   const [winner, setWinner] = useState("");
-
+  
   const play = (player: string, positon: number) => {
     if (xPositions.includes(positon) || oPositions.includes(positon)) {
     } else {
