@@ -76,7 +76,13 @@ export function TicTacToe() {
                   : { backgroundColor: "rgb(229, 248, 255)" }
               }
             >
-              {xPositions.includes(i) ? "X" : oPositions.includes(i) ? "O" : ""}
+              {xPositions.includes(i) ? (
+                <p>X</p>
+              ) : oPositions.includes(i) ? (
+                <p>O</p>
+              ) : (
+                ""
+              )}
             </div>
           ))}
         </div>
