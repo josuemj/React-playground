@@ -63,6 +63,8 @@
     width: 90vw;
     height: 80vh;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 5vh 5vw 5vh 5vw;
   }
 }
