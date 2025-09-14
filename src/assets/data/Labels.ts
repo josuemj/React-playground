@@ -85,4 +85,9 @@ export const labelColors: Record<string, LabelColor> = {
     onHoverColor: "rgb(255, 102, 102)",
     textColor: "black",
   },
+  canvas: {
+    backgroundColor: "rgb(153, 255, 153)",
+    onHoverColor: "rgb(102, 255, 102)",
+    textColor: "black",
+  },
 };
