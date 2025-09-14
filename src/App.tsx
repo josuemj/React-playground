@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Timer } from "./projects/timer/Timer";
 import { Sandbox } from "./projects/design-space/Sandbox";
 import { TicTacToe } from "./projects/tic-tac-toe/TicTacToe";
-import Gaming from "./projects/gaming/Gaming";
+import { Gaming } from "./projects/gaming/Gaming";
 
 function App() {
   const routes = {

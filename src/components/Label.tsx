@@ -8,6 +8,7 @@ type LabelProps = {
 
 export function Label({ label }: LabelProps) {
   const [isHovered, setHover] = useState(false);
+  console.log("label", label);
   const style = {
     backgroundColor: isHovered
       ? labelColors[label].onHoverColor

@@ -5,7 +5,7 @@ interface LabelColor {
 }
 
 export const labelColors: Record<string, LabelColor> = {
-  setState: {
+  te: {
     backgroundColor: "rgb(100, 200, 255)",
     onHoverColor: "rgb(55, 141, 194)",
     textColor: "black",
@@ -39,6 +39,11 @@ export const labelColors: Record<string, LabelColor> = {
     backgroundColor: "rgb(255, 100, 100)",
     onHoverColor: "rgb(116, 5, 5)",
     textColor: "white",
+  },
+  setState: {
+    backgroundColor: "rgb(255, 150, 50)",
+    onHoverColor: "rgb(204, 102, 0)",
+    textColor: "black",
   },
   useEffect: {
     backgroundColor: "rgb(16, 75, 35)",
