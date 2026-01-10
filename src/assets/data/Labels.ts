@@ -36,7 +36,7 @@ export const labelColors: Record<string, LabelColor> = {
     textColor: "white",
   },
   setTimeout: {
-    backgroundColor: "rgba(236, 51, 51, 1)",
+    backgroundColor: "rgb(114, 34, 34)",
     onHoverColor: "rgb(116, 5, 5)",
     textColor: "white",
   },
