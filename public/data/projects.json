@@ -52,5 +52,14 @@
     "backgrounColor": "red",
     "onHoverColor": "blue",
     "labels": ["game", "canvas"]
+  },
+  {
+    "image": "https://i.gzn.jp/img/2023/05/06/gridstackjs/00.png",
+    "name": "GridstackJS Dashboard",
+    "desc": "A dashboard layout using GridstackJS",
+    "route": "/gridstack-test",
+    "backgrounColor": "#4f46e5",
+    "onHoverColor": "blue",
+    "labels": ["game", "canvas"]
   }
 ]

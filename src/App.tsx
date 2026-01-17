@@ -7,6 +7,7 @@ import { Timer } from "./projects/timer/Timer";
 import { Sandbox } from "./projects/design-space/Sandbox";
 import { TicTacToe } from "./projects/tic-tac-toe/TicTacToe";
 import { Gaming } from "./projects/gaming/Gaming";
+import { GridStackTest } from "./projects/gridStack/GridStackTest";
 
 function App() {
   const routes = {
@@ -17,6 +18,7 @@ function App() {
     "/timer": Timer,
     "/sandbox": Sandbox,
     "/gaming": Gaming,
+    "/gridstack-test": GridStackTest,
   };
 
   return (
