@@ -24,6 +24,13 @@ A growing collection of React experiments, including:
 - Recharts or other graph libs (planned)
 - Maybe Zustand, Jotai, or other state libs (who knows?)
 
+## Testing
+- Playwright for end-to-end testing
+```bash
+npx playwright test --ui // Launches the Playwright Test Runner UI
+npx playwright test // Runs all tests in the terminal
+```
+
 ## 🙌 Contributing
 
 Want to help build this little lab?
