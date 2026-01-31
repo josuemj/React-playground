@@ -11,7 +11,7 @@ export const labelColors: Record<string, LabelColor> = {
     textColor: "black",
   },
   foundational: {
-    backgroundColor: "rgb(200, 100, 255)",
+    backgroundColor: "rgb(148, 104, 172)",
     onHoverColor: "rgb(180, 80, 240)",
     textColor: "white",
   },
