@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Timer.css";
 export function Timer() {
   const MAX_HOURS = 99;
@@ -10,8 +10,26 @@ export function Timer() {
   const [minutes, setMinutes] = useState<number>(0);
   const [seconds, setSeconds] = useState<number>(0);
 
+  const intervalRef = useRef<number>(0);
+
   const startTimer = () => {
-    console.log({ hours, minutes, seconds });
+    if (intervalRef.current) return;
+
+    intervalRef.current = setInterval(() => {
+      setSeconds((prevSeconds) => prevSeconds - 1);
+    }, 1000);
+  };
+
+  const stopTimer = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = 0;
+  };
+
+  const resetTimer = () => {
+    stopTimer();
+    setHours(0);
+    setMinutes(0);
+    setSeconds(0);
   };
 
   return (
@@ -20,7 +38,9 @@ export function Timer() {
         <h1>Timer</h1>
 
         <div className="timer">
-          <div className="display">00 : 00 : 00</div>
+          <div className="display">
+            {hours} : {minutes} : {seconds}
+          </div>
           <div className="inputs">
             <label>
               Hours:{" "}
@@ -63,8 +83,8 @@ export function Timer() {
             <button className="start-btn" onClick={startTimer}>
               Start
             </button>
-            <button className="stop-btn">Stop</button>
-            <button className="reset-btn">Reset</button>
+            <button className="stop-btn" onClick={stopTimer}>Stop</button>
+            <button className="reset-btn" onClick={resetTimer}>Reset</button>
           </div>
         </div>
       </section>
